@@ -15,54 +15,37 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { background: #f5f0e8; font-family: 'Source Serif 4', Georgia, serif; color: #2a2118; }
     a { text-decoration: none; color: inherit; }
-
-    /* NAV */
     nav { background: #f5f0e8; border-bottom: 1px solid #d4c9b0; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; position: sticky; top: 0; z-index: 10; }
-    .nav-logo { font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 600; letter-spacing: 0.02em; color: #1a1209; }
+    .nav-logo { font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 600; letter-spacing: 0.02em; color: #1a1209; border: 2px solid #8B1A1A; padding: 5px 12px; display: inline-block; }
     .nav-links { display: flex; gap: 1.5rem; list-style: none; }
     .nav-links a { font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #6b5a3e; font-weight: 300; }
     .nav-links a:hover { color: #1a1209; }
-
-    /* HERO */
     header.hero { border-bottom: 1px solid #d4c9b0; padding: 3rem 2rem 2.5rem; text-align: center; }
     .hero-eyebrow { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #8a7355; margin-bottom: 1rem; font-weight: 300; }
     .hero-title { font-family: 'Playfair Display', Georgia, serif; font-size: 52px; font-weight: 400; line-height: 1.1; color: #1a1209; margin: 0 0 1rem; letter-spacing: -0.01em; }
     .hero-tagline { font-size: 15px; color: #6b5a3e; font-weight: 300; font-style: italic; max-width: 480px; margin: 0 auto; line-height: 1.6; }
-
-    /* DATE BAR */
     .date-bar { display: flex; align-items: center; justify-content: space-between; padding: 0.6rem 2rem; border-bottom: 1px solid #d4c9b0; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #8a7355; font-weight: 300; }
-
-    /* MAIN LAYOUT */
     .main-grid { display: grid; grid-template-columns: 1fr 280px; max-width: 900px; margin: 0 auto; }
     .feed { padding: 2rem; border-right: 1px solid #d4c9b0; }
     .sidebar { padding: 2rem 1.5rem; }
-
-    /* CATEGORY SECTION HEADERS */
     .section-header { display: flex; align-items: center; gap: 1rem; margin: 2.5rem 0 1.5rem; padding-top: 2rem; border-top: 2px solid #1a1209; }
     .section-header:first-child { margin-top: 0; padding-top: 0; border-top: none; }
     .section-title { font-family: 'Playfair Display', Georgia, serif; font-size: 13px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #1a1209; }
     .section-line { flex: 1; height: 1px; background: #d4c9b0; }
-
-    /* FEATURED */
     .featured { padding-bottom: 2rem; margin-bottom: 0; border-bottom: 1px solid #d4c9b0; }
     .tag { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: #8a7355; font-weight: 400; margin-bottom: 0.75rem; display: block; }
     .featured-title { font-family: 'Playfair Display', Georgia, serif; font-size: 26px; font-weight: 600; line-height: 1.25; color: #1a1209; margin: 0 0 0.75rem; }
     .featured-title:hover { color: #5c3d1e; }
     .featured-deck { font-size: 14px; color: #4a3a28; line-height: 1.7; font-weight: 300; margin: 0 0 1rem; }
-
-    /* ARTICLES */
     .article { display: grid; grid-template-columns: 1fr 80px; gap: 1rem; padding: 1.25rem 0; border-bottom: 1px solid #e8e0d0; cursor: pointer; }
     .article:last-child { border-bottom: none; }
     .article-title { font-family: 'Playfair Display', Georgia, serif; font-size: 16px; font-weight: 400; line-height: 1.35; color: #1a1209; margin: 0 0 0.4rem; }
     .article:hover .article-title { color: #5c3d1e; }
     .article-deck { font-size: 12px; color: #6b5a3e; line-height: 1.6; font-weight: 300; margin: 0 0 0.4rem; }
-    .article-thumb { width: 80px; height: 64px; background: #e8dfc8; border-radius: 2px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-
-    /* META */
+    .article-thumb { width: 80px; height: 64px; background: #e8dfc8; border-radius: 2px; overflow: hidden; flex-shrink: 0; }
+    .article-thumb img { width: 100%; height: 100%; object-fit: cover; }
     .meta { font-size: 11px; color: #8a7355; letter-spacing: 0.06em; display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap; }
     .meta-dot { width: 3px; height: 3px; background: #c4b08a; border-radius: 50%; }
-
-    /* SIDEBAR */
     .sidebar-section { margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid #d4c9b0; }
     .sidebar-section:last-child { border-bottom: none; }
     .sidebar-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #8a7355; font-weight: 400; margin-bottom: 1rem; display: block; }
@@ -71,38 +54,23 @@
     .sidebar-item-title { font-family: 'Playfair Display', Georgia, serif; font-size: 14px; font-weight: 400; line-height: 1.35; color: #1a1209; margin: 0 0 0.3rem; }
     .sidebar-item:hover .sidebar-item-title { color: #5c3d1e; }
     .sidebar-item-meta { font-size: 11px; color: #8a7355; }
-
-    /* TOPICS */
     .topics { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-    .topic { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 10px; border: 1px solid #c4b08a; color: #6b5a3e; border-radius: 2px; cursor: pointer; font-weight: 300; }
+    .topic { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 10px; border: 1px solid #c4b08a; color: #6b5a3e; border-radius: 2px; cursor: pointer; font-weight: 300; text-decoration: none; display: inline-block; }
     .topic:hover { background: #ede5d4; }
-
-    /* SUBSCRIBE */
     .subscribe-box { background: #1a1209; padding: 1.5rem; border-radius: 2px; }
     .subscribe-title { font-family: 'Playfair Display', Georgia, serif; font-size: 16px; color: #f5f0e8; margin: 0 0 0.5rem; font-weight: 400; }
     .subscribe-text { font-size: 12px; color: #a8967a; line-height: 1.6; margin: 0 0 1rem; font-weight: 300; }
     .subscribe-btn { width: 100%; padding: 10px; background: #c4a265; border: none; color: #1a1209; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; font-family: 'Source Serif 4', serif; cursor: pointer; border-radius: 2px; font-weight: 400; }
     .subscribe-btn:hover { background: #d4b275; }
-
-    /* DIVIDER */
-    .ornament { text-align: center; color: #c4b08a; font-size: 13px; letter-spacing: 0.3em; margin: 0.5rem 0; }
-
-    /* FOOTER */
+    .ornament { text-align: center; color: #c4b08a; font-size: 13px; letter-spacing: 0.3em; }
     footer { border-top: 1px solid #d4c9b0; padding: 1.5rem 2rem; text-align: center; font-size: 11px; color: #8a7355; letter-spacing: 0.08em; font-weight: 300; }
-
-    /* RESPONSIVE */
-    @media (max-width: 680px) {
-      .main-grid { grid-template-columns: 1fr; }
-      .sidebar { border-top: 1px solid #d4c9b0; }
-      .hero-title { font-size: 36px; }
-      .nav-links { display: none; }
-    }
+    #feed-container .section-header:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+    @media (max-width: 680px) { .main-grid { grid-template-columns: 1fr; } .sidebar { border-top: 1px solid #d4c9b0; } .hero-title { font-size: 36px; } .nav-links { display: none; } }
   </style>
 </head>
 <body>
-
   <nav>
-    <a href="index.html" class="nav-logo" style="border: 2px solid #8B1A1A; padding: 5px 12px; display: inline-block;">The Meridian View</a>
+    <a href="index.html" class="nav-logo">The Meridian View</a>
     <ul class="nav-links">
       <li><a href="#geopolitics">Geopolitics</a></li>
       <li><a href="#history">History</a></li>
@@ -119,143 +87,17 @@
   </header>
 
   <div class="date-bar">
-    <span>Wednesday, May 27, 2026</span>
+    <span id="today-date"></span>
     <span class="ornament">✦ ✦ ✦</span>
     <span>Vol. I</span>
   </div>
 
   <div class="main-grid">
-    <main class="feed">
-
-      <!-- GEOPOLITICS -->
-      <div class="section-header" id="geopolitics">
-        <span class="section-title">Geopolitics</span>
-        <span class="section-line"></span>
-      </div>
-
-      <article class="featured">
-        <span class="tag">✦ Featured</span>
-        <h2 class="featured-title"><a href="why-lebanon-has-never-had-a-functioning-state.html" style="color:inherit;">Why Lebanon Has Never Had a Functioning State</a></h2>
-        <p class="featured-deck">Confessionalism, foreign interference, and the architecture of deliberate dysfunction — a structural explainer of why Lebanon's political paralysis isn't an accident, but a design.</p>
-        <div class="meta">
-          <span>Geopolitics</span><span class="meta-dot"></span>
-          <span>10 min read</span><span class="meta-dot"></span>
-          <span>May 20, 2026</span>
-        </div>
-      </article>
-
-      <article class="article">
-        <div>
-          <span class="tag">Geopolitics</span>
-          <h3 class="article-title"><a href="china-taiwan-and-the-war-that-hasnt-happened-yet.html" style="color:inherit;">China, Taiwan, and the War That Hasn't Happened Yet</a></h3>
-          <p class="article-deck">The most dangerous geopolitical flashpoint on earth — and why it hasn't exploded.</p>
-          <div class="meta"><span>7 min read</span><span class="meta-dot"></span><span>June 7, 2026</span></div>
-        </div>
-        <div class="article-thumb"><img src="taiwan-thumb.jpg" style="width:80px;height:64px;object-fit:cover;border-radius:2px;" alt=""></div>
-      </article>
-
-      <article class="article">
-        <div>
-          <span class="tag">Geopolitics</span>
-          <h3 class="article-title"><a href="saudi-vision-2030-what-mbs-is-actually-trying-to-do.html" style="color:inherit;">Saudi Vision 2030: What MBS Is Actually Trying to Do</a></h3>
-          <p class="article-deck">Real progress, real repression, and a race against the end of oil.</p>
-          <div class="meta"><span>7 min read</span><span class="meta-dot"></span><span>June 11, 2026</span></div>
-        </div>
-        <div class="article-thumb"><img src="saudi-thumb.jpg" style="width:80px;height:64px;object-fit:cover;border-radius:2px;" alt=""></div>
-      </article>
-
-      <article class="article">
-        <div>
-          <span class="tag">Geopolitics</span>
-          <h3 class="article-title"><a href="iran-after-the-war-what-comes-next.html" style="color:inherit;">Iran After the War: What Comes Next</a></h3>
-          <p class="article-deck">The nuclear program is damaged, the regime survives. The question is what it does next.</p>
-          <div class="meta"><span>7 min read</span><span class="meta-dot"></span><span>June 19, 2026</span></div>
-        </div>
-        <div class="article-thumb"><img src="iran-thumb.jpg" style="width:80px;height:64px;object-fit:cover;border-radius:2px;" alt=""></div>
-      </article>
-
-      <article class="article">
-        <div>
-          <span class="tag">Geopolitics</span>
-          <h3 class="article-title"><a href="turkeys-double-game.html" style="color:inherit;">Turkey's Double Game</a></h3>
-          <p class="article-deck">NATO member, Russian arms buyer, Ukraine drone supplier. This isn't inconsistency — it's strategy.</p>
-          <div class="meta"><span>6 min read</span><span class="meta-dot"></span><span>June 27, 2026</span></div>
-        </div>
-        <div class="article-thumb"><img src="turkey-thumb.jpg" style="width:80px;height:64px;object-fit:cover;border-radius:2px;" alt=""></div>
-      </article>
-
-      <article class="article">
-        <div>
-          <span class="tag">Geopolitics</span>
-          <h3 class="article-title"><a href="pakistan-the-most-dangerous-country-nobody-talks-about.html" style="color:inherit;">Pakistan: The Most Dangerous Country Nobody Talks About</a></h3>
-          <p class="article-deck">Nuclear weapons, a military that runs the state, and an economy in permanent crisis.</p>
-          <div class="meta"><span>7 min read</span><span class="meta-dot"></span><span>July 1, 2026</span></div>
-        </div>
-        <div class="article-thumb"><img src="pakistan-thumb.jpg" style="width:80px;height:64px;object-fit:cover;border-radius:2px;" alt=""></div>
-      </article>
-
-      <!-- HISTORY -->
-      <div class="section-header" id="history">
-        <span class="section-title">History</span>
-        <span class="section-line"></span>
-      </div>
-
-      <article class="article">
-        <div>
-          <span class="tag">History</span>
-          <h3 class="article-title"><a href="the-sykes-picot-lines-that-still-bleed.html" style="color:inherit;">The Sykes-Picot Lines That Still Bleed</a></h3>
-          <p class="article-deck">How two diplomats drawing borders in 1916 created a century of conflict in the Middle East.</p>
-          <div class="meta"><span>8 min read</span><span class="meta-dot"></span><span>June 3, 2026</span></div>
-        </div>
-        <div class="article-thumb"></div>
-      </article>
-
-      <!-- ECONOMICS -->
-      <div class="section-header" id="economics">
-        <span class="section-title">Economics</span>
-        <span class="section-line"></span>
-      </div>
-
-      <article class="article">
-        <div>
-          <span class="tag">Economics</span>
-          <h3 class="article-title"><a href="the-dollar-is-still-king-but-the-court-is-restless.html" style="color:inherit;">The Dollar Is Still King — But the Court Is Restless</a></h3>
-          <p class="article-deck">Dollar dominance, de-dollarization, and why changing the global reserve currency is harder than it looks.</p>
-          <div class="meta"><span>7 min read</span><span class="meta-dot"></span><span>June 15, 2026</span></div>
-        </div>
-        <div class="article-thumb"><img src="dollar-thumb.jpg" style="width:80px;height:64px;object-fit:cover;border-radius:2px;" alt=""></div>
-      </article>
-
-      <article class="article">
-        <div>
-          <span class="tag">Economics</span>
-          <h3 class="article-title"><a href="why-africa-keeps-getting-looted.html" style="color:inherit;">Why Africa Keeps Getting Looted</a></h3>
-          <p class="article-deck">30% of the world's minerals, the poorest region on earth. This is not an accident.</p>
-          <div class="meta"><span>7 min read</span><span class="meta-dot"></span><span>June 23, 2026</span></div>
-        </div>
-        <div class="article-thumb"><img src="africa-thumb.jpg" style="width:80px;height:64px;object-fit:cover;border-radius:2px;" alt=""></div>
-      </article>
-
-      <!-- POWER -->
-      <div class="section-header" id="power">
-        <span class="section-title">Power</span>
-        <span class="section-line"></span>
-      </div>
-
-      <article class="article">
-        <div>
-          <span class="tag">Power</span>
-          <h3 class="article-title"><a href="how-trump-lost-the-people-who-elected-him.html" style="color:inherit;">How Trump Lost the People Who Elected Him</a></h3>
-          <p class="article-deck">Tariffs, five-dollar gas, and an unpopular war — the story of a political contract broken.</p>
-          <div class="meta"><span>9 min read</span><span class="meta-dot"></span><span>May 27, 2026</span></div>
-        </div>
-        <div class="article-thumb"><img src="trump-thumb.jpg" style="width:80px;height:64px;object-fit:cover;border-radius:2px;" alt=""></div>
-      </article>
-
+    <main class="feed" id="feed-container">
+      <p style="color:#8a7355;font-size:13px;padding:2rem 0;">Loading...</p>
     </main>
 
     <aside class="sidebar">
-
       <div class="sidebar-section">
         <span class="sidebar-label">Browse by topic</span>
         <div class="topics">
@@ -270,24 +112,8 @@
         </div>
       </div>
 
-      <div class="sidebar-section">
-        <span class="sidebar-label">Most read</span>
-        <div class="sidebar-item">
-          <p class="sidebar-item-title"><a href="why-lebanon-has-never-had-a-functioning-state.html" style="color:inherit;">Why Lebanon Has Never Had a Functioning State</a></p>
-          <span class="sidebar-item-meta">Geopolitics · 10 min</span>
-        </div>
-        <div class="sidebar-item">
-          <p class="sidebar-item-title"><a href="china-taiwan-and-the-war-that-hasnt-happened-yet.html" style="color:inherit;">China, Taiwan, and the War That Hasn't Happened Yet</a></p>
-          <span class="sidebar-item-meta">Geopolitics · 7 min</span>
-        </div>
-        <div class="sidebar-item">
-          <p class="sidebar-item-title"><a href="the-dollar-is-still-king-but-the-court-is-restless.html" style="color:inherit;">The Dollar Is Still King</a></p>
-          <span class="sidebar-item-meta">Economics · 7 min</span>
-        </div>
-        <div class="sidebar-item">
-          <p class="sidebar-item-title"><a href="pakistan-the-most-dangerous-country-nobody-talks-about.html" style="color:inherit;">Pakistan: The Most Dangerous Country Nobody Talks About</a></p>
-          <span class="sidebar-item-meta">Geopolitics · 7 min</span>
-        </div>
+      <div class="sidebar-section" id="sidebar-recent">
+        <span class="sidebar-label">Most recent</span>
       </div>
 
       <div class="subscribe-box">
@@ -295,7 +121,6 @@
         <p class="subscribe-text">New analysis, when it's ready. No noise, no daily spam.</p>
         <button class="subscribe-btn" onclick="window.open('https://themeridianview.substack.com','_blank')">Subscribe to the newsletter →</button>
       </div>
-
     </aside>
   </div>
 
@@ -303,5 +128,85 @@
     <p>© 2026 The Meridian View · Independent · No agenda · Just clarity</p>
   </footer>
 
+  <script>
+    // Set today's date
+    document.getElementById('today-date').textContent = new Date().toLocaleDateString('en-US', {weekday:'long', year:'numeric', month:'long', day:'numeric'});
+
+    // Category order and IDs
+    const categories = ['Geopolitics', 'History', 'Economics', 'Power'];
+    const categoryIds = {'Geopolitics':'geopolitics','History':'history','Economics':'economics','Power':'power'};
+
+    fetch('articles.json')
+      .then(r => r.json())
+      .then(articles => {
+        const feed = document.getElementById('feed-container');
+        feed.innerHTML = '';
+
+        // Featured = first article (most recent)
+        const featured = articles[0];
+        const featuredHTML = `
+          <div class="section-header" style="margin-top:0;padding-top:0;border-top:none;">
+            <span class="section-title">Latest</span>
+            <span class="section-line"></span>
+          </div>
+          <article class="featured">
+            <span class="tag">✦ ${featured.tag}</span>
+            <h2 class="featured-title"><a href="${featured.slug}" style="color:inherit;">${featured.title}</a></h2>
+            <p class="featured-deck">${featured.deck}</p>
+            <div class="meta">
+              <span>${featured.tag}</span><span class="meta-dot"></span>
+              <span>${featured.readtime}</span><span class="meta-dot"></span>
+              <span>${featured.date}</span>
+            </div>
+          </article>`;
+        feed.innerHTML += featuredHTML;
+
+        // Group remaining articles by category
+        const grouped = {};
+        categories.forEach(c => grouped[c] = []);
+        articles.slice(1).forEach(a => {
+          if (grouped[a.tag]) grouped[a.tag].push(a);
+        });
+
+        // Render each category section
+        categories.forEach(cat => {
+          if (grouped[cat].length === 0) return;
+          let sectionHTML = `
+            <div class="section-header" id="${categoryIds[cat]}">
+              <span class="section-title">${cat}</span>
+              <span class="section-line"></span>
+            </div>`;
+          grouped[cat].forEach(a => {
+            const thumb = a.image
+              ? `<div class="article-thumb"><img src="${a.image}" alt=""></div>`
+              : `<div class="article-thumb"></div>`;
+            sectionHTML += `
+              <article class="article" onclick="location.href='${a.slug}'">
+                <div>
+                  <span class="tag">${a.tag}</span>
+                  <h3 class="article-title">${a.title}</h3>
+                  <p class="article-deck">${a.deck}</p>
+                  <div class="meta"><span>${a.readtime}</span><span class="meta-dot"></span><span>${a.date}</span></div>
+                </div>
+                ${thumb}
+              </article>`;
+          });
+          feed.innerHTML += sectionHTML;
+        });
+
+        // Sidebar recent articles
+        const sidebar = document.getElementById('sidebar-recent');
+        articles.slice(0, 4).forEach(a => {
+          sidebar.innerHTML += `
+            <div class="sidebar-item" onclick="location.href='${a.slug}'">
+              <p class="sidebar-item-title">${a.title}</p>
+              <span class="sidebar-item-meta">${a.tag} · ${a.readtime}</span>
+            </div>`;
+        });
+      })
+      .catch(e => {
+        document.getElementById('feed-container').innerHTML = '<p style="color:#8a7355;padding:2rem;">Could not load articles.</p>';
+      });
+  </script>
 </body>
 </html>
