@@ -78,7 +78,9 @@
       <li><a href="#history">History</a></li>
       <li><a href="#economics">Economics</a></li>
       <li><a href="#power">Power</a></li>
+      <li><a href="#technology">Technology</a></li>
       <li><a href="https://themeridianview.substack.com" target="_blank">Newsletter</a></li>
+      <li><a href="about.html">About</a></li>
     </ul>
   </nav>
 
@@ -111,6 +113,7 @@
           <span class="topic">US-China</span>
           <span class="topic">Finance</span>
           <span class="topic">Africa</span>
+          <a href="#technology" class="topic">Technology</a>
         </div>
       </div>
 
@@ -135,8 +138,8 @@
     document.getElementById('today-date').textContent = new Date().toLocaleDateString('en-US', {weekday:'long', year:'numeric', month:'long', day:'numeric'});
 
     // Category order and IDs
-    const categories = ['Geopolitics', 'History', 'Economics', 'Power'];
-    const categoryIds = {'Geopolitics':'geopolitics','History':'history','Economics':'economics','Power':'power'};
+    const categories = ['Geopolitics', 'History', 'Economics', 'Power', 'Technology'];
+    const categoryIds = {'Geopolitics':'geopolitics','History':'history','Economics':'economics','Power':'power','Technology':'technology'};
 
     fetch('articles.json')
       .then(r => r.json())
